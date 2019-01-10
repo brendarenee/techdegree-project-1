@@ -1,15 +1,15 @@
 /* Global Layout Set-up */
-* { 
+* {
   box-sizing: border-box;
 }
-  
+
 body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background: #e3e3e3;
 }
 /* Link Styles */
 
@@ -30,6 +30,7 @@ a:hover {
   padding: 10px;
   position: fixed;
   text-align: center;
+  font-family: 'Lekton', cursive;
 }
 .nav {
   display: flex;
@@ -56,50 +57,58 @@ a:hover {
 }
 
 header {
-  text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
-  background-size: cover;
+  text-align: right;
+  background: url('images/background-desk.jpg') no-repeat top center ;
+  background-size: auto;
   overflow: hidden;
   padding-top: 60px;
+  font-family: 'Lekton', cursive;
 }
 header {
   line-height: 1.5;
 }
 header .profile-image {
   margin-top: 50px;
+  margin-right: 150px;
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 3px solid black;
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2) translateY(-10px);
+  box-shadow: 0px 6px 20px 6px rgba(0,0,0,0.62);;
 }
 .tag {
-  background-color: #efefef;
-  color: black;
-  padding: 10px;
-  border-radius: 5px;
-  display: table;
-  margin: 10px auto;
-} 
-.location {
-  background-color: #222;
-  color: yellow;
+  background-image: linear-gradient(to left, black, transparent);
+  color: lightgrey;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin: 10px 150px 10px 400px;
 }
+.name {
+  color: #8cb87d;
+}
+
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
-  background: #fff;
+  background-image: linear-gradient(to bottom, #606060, transparent);
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
 }
+
+h2 {
+  font-family: 'Lekton', cursive;
+  font-size: 1.75em;
+}
+
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #8cb87d;
 }
 
 ul.skills {
@@ -110,14 +119,14 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #0086b3;
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: #85adad;
 }
 
 footer {
@@ -151,9 +160,7 @@ a.social {
   opacity: .4;
   transition: all .5s;
 }
-a.twitter {
-  background-image: url(images/twitter.svg);
-}
+
 a.linkedin {
   background-image: url(images/linkedin.svg);
 }
@@ -169,10 +176,10 @@ a.social:hover {
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
-  
+
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
+      display: flex;
       max-width: 1200px;
       -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -204,4 +211,3 @@ a.social:hover {
   }
 
 }
-
