@@ -73,7 +73,7 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid black;
+  border:  5px double #222;
   transition: all .5s;
 }
 header .profile-image:hover {
@@ -84,7 +84,7 @@ header .profile-image:hover {
   background-image: linear-gradient(to left, black, transparent);
   color: lightgrey;
   padding: 5px 10px;
-  border-radius: 20px;
+  border-radius: 5px;
   margin: 10px 150px 10px 400px;
 }
 .name {
@@ -172,6 +172,107 @@ a.social:hover {
 }
 .clearfix {
   clear: both;
+}
+
+/*************Styles for Experience Page*************/
+
+.card.experience {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  width: 600px;
+  text-align: left;
+  background-image: linear-gradient(to bottom, #606060, transparent);
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+
+.experience h4 {
+  text-align: center;
+  font-weight: 700;
+}
+
+ul.education {
+  padding: 0;
+  text-align: center;
+}
+
+.education li {
+    border-radius: 6px;
+    display: block;
+    width: 50%;
+    margin: 5px auto;
+    background: #0086b3;
+    color: white;
+    padding: 5px 10px;
+}
+
+.education li:nth-child(odd) {
+  background: #85adad;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  font-weight: 700;
+}
+
+.column.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/*****************Styles for the Contact Page*****************/
+form {
+  border: 2px inset;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+input {
+    border-radius: 5px;
+    width: 210px;
+    padding: 5px;
+    font-size: 1em;
+}
+
+textarea {
+    display: inline-block;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+    border: inset;
+    width: 360px;
+    height: 200px;
+    font-size: 1em;
+}
+
+#formbuttons {
+    text-align: center;
+}
+
+input.buttons {
+    height: 40px;
+    width: 100px;
+    margin: 10px;
+    font-size: 1em;
+    background-color: #222;
+    color: #e3e3e3;
 }
 
 /* Styles for larger screens */
