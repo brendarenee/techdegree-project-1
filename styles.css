@@ -9,7 +9,8 @@ body {
   text-align: center;
   font-family: 'Nanum Gothic', sans-serif;
   color: #222;
-  background: #e3e3e3;
+  background-image: url(images/brickwall.jpg);
+  background-color: #e3e3e3;
 }
 /* Link Styles */
 
@@ -18,7 +19,7 @@ a {
   color: #999;
 }
 a:hover {
-  color: #6633ff;
+  color: #8cb87d;
 }
 
 /* Section Styles */
@@ -58,7 +59,7 @@ a:hover {
 
 header {
   text-align: right;
-  background: url('images/background-desk.jpg') no-repeat top center ;
+  background: url('images/background-desk-bw.jpg') no-repeat top center ;
   background-size: auto;
   overflow: hidden;
   padding-top: 60px;
@@ -69,11 +70,11 @@ header {
 }
 header .profile-image {
   margin-top: 50px;
-  margin-right: 150px;
+  margin-right: 10%;
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border:  5px double #222;
+  border:  5px double #e3e3e3;
   transition: all .5s;
 }
 header .profile-image:hover {
@@ -81,18 +82,18 @@ header .profile-image:hover {
   box-shadow: 0px 6px 20px 6px rgba(0,0,0,0.62);;
 }
 .tag {
-  background-image: linear-gradient(to left, black, transparent);
-  color: lightgrey;
+  background-image: linear-gradient(to left, white, transparent);
+  color: #222;
   padding: 5px 10px;
   border-radius: 5px;
-  margin: 10px 150px 10px 400px;
+  margin: 10px 10% 10px 400px;
 }
 .name {
-  color: #8cb87d;
+  color: #006600;
 }
 
 .card {
-  margin: 30px;
+  margin: 10px 10px 30px 10px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
@@ -109,6 +110,70 @@ h2 {
 
 .card:hover {
   border-color: #8cb87d;
+}
+
+#slideshow {
+  overflow: hidden;
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.slide-wrapper {
+  width: 1500px;
+  -webkit-animation: slide 30s ease infinite;
+  -ms-animation: slide 30s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 300px;
+  width: 300px;
+  background-color: #222;
+}
+
+.slide:nth-child(1) {
+  background: url(images/slideshow-1.jpg) no-repeat;
+}
+
+.slide:nth-child(2) {
+  background: url(images/slideshow-2.jpg) no-repeat;
+}
+
+.slide:nth-child(3) {
+  background: url(images/slideshow-3.jpg) no-repeat;
+}
+
+.slide:nth-child(4) {
+  background: url(images/slideshow-4.jpg) no-repeat;
+}
+.slide:nth-child(5) {
+  background: url(images/slideshow-5.jpg) no-repeat;
+}
+
+
+@-webkit-keyframes slide {
+  10% {margin-left: 0px;}
+  20% {margin-left: -300px;}
+  30% {margin-left: -300px;}
+  40% {margin-left: -600px;}
+  50% {margin-left: -600px;}
+  60% {margin-left: -900px;}
+  70% {margin-left: -900px;}
+  80% {margin-left: -1200px;}
+  90% {margin-left: -1200px;}
+}
+
+@-ms-keyframes slide {
+  10% {margin-left: 0px;}
+  20% {margin-left: -300px;}
+  30% {margin-left: -300px;}
+  40% {margin-left: -600px;}
+  50% {margin-left: -600px;}
+  60% {margin-left: -900px;}
+  70% {margin-left: -900px;}
+  80% {margin-left: -1200px;}
+  90% {margin-left: -1200px;}
 }
 
 ul.skills {
@@ -150,6 +215,15 @@ footer ul li {
   display: inline-block;
 }
 
+a.contact {
+  color: #006600;
+}
+
+a.contact:hover {
+  color: black;
+  font-weight: 700;
+}
+
 a.social {
   display: inline-block;
   text-indent: -9999px;
@@ -185,6 +259,10 @@ a.social:hover {
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
+}
+
+.card.experience:hover {
+  border-color: #8cb87d;
 }
 
 .experience h4 {
@@ -232,7 +310,7 @@ ul.education {
 
 /*****************Styles for the Contact Page*****************/
 form {
-  border: 2px inset;
+  border: 2px inset darkgrey;
   border-radius: 5px;
   padding: 15px;
 }
@@ -245,21 +323,21 @@ label {
 }
 
 input {
-    border-radius: 5px;
-    width: 210px;
-    padding: 5px;
-    font-size: 1em;
+  border-radius: 5px;
+  width: 210px;
+  padding: 5px;
+  font-size: 1em;
 }
 
 textarea {
-    display: inline-block;
-    padding: 5px;
-    margin: 10px;
-    border-radius: 5px;
-    border: inset;
-    width: 360px;
-    height: 200px;
-    font-size: 1em;
+  display: inline-block;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+  border: inset;
+  width: 360px;
+  height: 200px;
+  font-size: 1em;
 }
 
 #formbuttons {
@@ -273,6 +351,10 @@ input.buttons {
     font-size: 1em;
     background-color: #222;
     color: #e3e3e3;
+}
+
+input.buttons:hover {
+  color: #8cb87d;
 }
 
 /* Styles for larger screens */
